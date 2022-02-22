@@ -1,0 +1,24 @@
+{
+  "short_name": "Duotrigentordle",
+  "name": "Duotrigentordle",
+  "icons": [
+    {
+      "src": "favicon-128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#1F2937",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#181a1b",
+  "description": "Put your skills to the test and solve thirty-two Wordles at once! You have 37 guesses to solve all thirty-two words. A new duotrigentordle available each day to solve."
+}
