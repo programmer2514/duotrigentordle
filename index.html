@@ -1492,7 +1492,7 @@ function time_to_next() {
     }
     if (last_daily == null) return null;
     var startDate = (new Date('02/13/2022'));
-    var nextDate = startDate.getTime() + ((int(last_daily) + 1) * 1000 * 3600 * 24) - (720*1000*3600*24);
+    var nextDate = startDate.getTime() + ((int(last_daily) + 1) * 1000 * 3600 * 24) - (960*1000*3600*24);
     var date = (new Date());
     var timeLeftSeconds = ((nextDate - date.getTime()) / 1000);
 
@@ -1868,7 +1868,7 @@ function do_share(copy, shareType) {
 
     var shouldShowWords = line >= TOTAL_LINES || (answer_correct[0] >= 0 && answer_correct[1] >= 0 && answer_correct[2] >= 0 && answer_correct[3] >= 0) && answer_correct[4] >= 0 && answer_correct[5] >= 0 && answer_correct[6] >= 0 && answer_correct[7] >= 0 && answer_correct[8] >= 0 && answer_correct[9] >= 0 && answer_correct[10] >= 0 && answer_correct[11] >= 0 && answer_correct[12] >= 0 && answer_correct[13] >= 0 && answer_correct[14] >= 0 && answer_correct[15] >= 0;
     if (daily_mode) {
-        text_share = "Daily duotrigentordle #" + (seed-720).toString(10) + "\n" +
+        text_share = "Daily duotrigentordle #" + (seed-960).toString(10) + "\n" +
             get_num_emoji(answer_correct[0]) +
             get_num_emoji(answer_correct[1]) + "\n" +
             get_num_emoji(answer_correct[2]) +
@@ -2021,7 +2021,7 @@ function do_share(copy, shareType) {
             ctx.textBaseline = "alphabetic";
             ctx.fillStyle = "#ffffff";
 
-            var titleText = daily_mode ? "Daily duotrigentordle #" + (seed - 720).toString(10) : "duotrigentordle";
+            var titleText = daily_mode ? "Daily duotrigentordle #" + (seed - 960).toString(10) : "duotrigentordle";
             var metrics = ctx.measureText(titleText);
             var fontHeight = metrics.actualBoundingBoxAscent;
             ctx.fillText(titleText, canvas.width / 2, y * (size + padding) + size - (size - fontHeight) / 2, canvas.width - textPadding * 2);
