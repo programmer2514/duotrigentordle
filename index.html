@@ -1531,9 +1531,9 @@ function restart() {
     if (daily_mode) {
         var date = (new Date());
         var startDate = (new Date('02/13/2022'));
-        seed = (720+((date.getTime() - startDate.getTime()) / (1000 * 3600 * 24))) >> 0;
+        seed = (960+((date.getTime() - startDate.getTime()) / (1000 * 3600 * 24))) >> 0;
 
-        printclear(acquire("game_title"), "daily duotrigentordle #" + (seed-720).toString(10).padStart(4, "0"));
+        printclear(acquire("game_title"), "daily duotrigentordle #" + (seed-960).toString(10).padStart(4, "0"));
         last_daily = seed;
         if (!no_localstorage) {
             try {
